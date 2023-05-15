@@ -1,0 +1,11 @@
+*{ box-sizing: border-box;}
+
+body{
+	background-color: rgb(195, 203, 212);
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}

@@ -1,3 +1,11 @@
+$black: rgb(0, 0, 0,)
+$darkGreen: #003B00
+$midGreen: #008F11
+$flashGreen: #3bff6c
+$lightGreen: #cdffd9
+$white: #ffffff
+$black: #000000
+
 @font-face
     font-family: matrixFont
     src: url(matrix.ttf) format('truetype')
@@ -6,28 +14,29 @@
     box-sizing: border-box
     font-family: 'Courier New', Courier, monospace
 
-$black: rgb(0, 0, 0,)
-$darkGreen: #003B00
-$midGreen: #008F11
-$flashGreen: #3bff6c
-$lightGreen: #cdffd9
-$white: #ffffff
-
 body
     background-color: $black
     color: $lightGreen
+    // J'ai essayé avec un webp mais le fichier gif est plus petit et plus beau
+    // J'ai réduit le fichier initial de 7MB à 737KB
+    background-image: url('../imgs/matrixconsole-mediumwide.webp')
+    background-repeat: repeat-x
+    background-attachment: fixed
+    background-size: contain
 
 .container
     width: 90%
     max-width: 1200px
     margin: 0 auto
     padding: 0
+    //background-color: red
 
 header
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
+    //background-color: blue
 
 .logo
     margin: 3rem 0 0 0
@@ -51,5 +60,10 @@ header
             letter-spacing: 0.1rem
             text-decoration: none
             color: $flashGreen
+            text-shadow: 0 0 0.5rem $flashGreen
             &:hover
                 color: $lightGreen
+
+.mainImg
+    width: 100%
+    box-shadow: 0 0 1.5rem $flashGreen

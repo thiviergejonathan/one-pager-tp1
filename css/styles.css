@@ -1,10 +1,15 @@
+@font-face {
+  font-family: matrixFont;
+  src: url(matrix.ttf) format("truetype");
+}
 * {
   box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
   background-color: rgb(0, 0, 0);
-  color: #9effb6;
+  color: #cdffd9;
 }
 
 .container {
@@ -16,10 +21,13 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  margin: 0;
+  margin: 3rem 0 0 0;
   padding: 0;
 }
 .logo h1 {
@@ -31,12 +39,19 @@ header {
 }
 
 .mainMenu {
-  background-color: rgb(50, 100, 0);
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 2rem 0 3rem 0;
   padding: 0;
+  gap: 2rem;
 }
-.mainMenu__item {
-  background-color: rgb(0, 50, 100);
+.mainMenu__item a {
+  font-size: 1.4rem;
+  font-family: matrixFont;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: #3bff6c;
+}
+.mainMenu__item a:hover {
+  color: #cdffd9;
 }

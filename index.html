@@ -4,56 +4,55 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Ma première page web</title>
+	<title>Entrez dans la matrice</title>
 	<link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-
-	<div class="container">
-
-		<header>
-			<a href="index.html" class="logo">
-				<h1>
-					<img class="logo__img" src="./imgs/the-matrix.png" alt="The Matrix Logo">
-				</h1>
-			</a>
-
-			<nav>
-				<ul class="mainMenu">
-					<li class="mainMenu__item"><a href="#">Infolettre</a></li>
-					<li class="mainMenu__item"><a href="#">Pilules</a></li>
-					<li class="mainMenu__item"><a href="#">Films</a></li>
-					<li class="mainMenu__item"><a href="#">Images</a></li>
-					<li class="mainMenu__item"><a href="#">Critiques</a></li>
-					<li class="mainMenu__item"><a href="#">Vedettes</a></li>
-					<li class="mainMenu__item"><a href="#">Commentaires</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<main>
-
+	<div class="matrixConsoleBG">
+		<div class="container">
+			<header>
+				<a href="index.html" class="logo">
+					<h1>
+						<img class="logo__img" src="./imgs/the-matrix.png" alt="The Matrix Logo">
+					</h1>
+				</a>
+				<nav>
+					<ul class="mainMenu">
+						<li class="mainMenu__item"><a href="#">Infolettre</a></li>
+						<li class="mainMenu__item"><a href="#">Pilules</a></li>
+						<li class="mainMenu__item"><a href="#">Films</a></li>
+						<li class="mainMenu__item"><a href="#">Images</a></li>
+						<li class="mainMenu__item"><a href="#">Critiques</a></li>
+						<li class="mainMenu__item"><a href="#">Vedettes</a></li>
+						<li class="mainMenu__item"><a href="#">Commentaires</a></li>
+					</ul>
+				</nav>
+			</header>
 			<section>
-				<img src="imgs/neoflying.webp" alt="Neo Flying" class="mainImg">
+				<img src="imgs/neoflying.webp" alt="Neo vole" class="mainImg glowingBG">
 			</section>
-
-			<section>
-				<span>Text random</span>
-				<form action="#">
-					<input type="text">
-					<input type="button" value="Button">
+		</div>
+		<section class="newsletter glowingBG">
+			<div class="newsletter__container">
+				<h2 class="newsletter__label">Abonnez-vous à notre infolettre</h2>
+				<form action="#" class="newsletter__form">
+					<input type="email" value="Votre courriel" class="">
+					<input type="button" value="S'abonner">
 				</form>
-			</section>
+			</div>
+		</section>
+	</div>
 
+	<main>
+		<div class="blackBG">
 			<section>
 				<span>des barbos</span>
 				<form action="#">
 					<input type="button" value="Button">
 				</form>
 			</section>
-
 			<section>
 				<h2>gros texte important</h2>
 				<span>text lorem ipsum</span>
@@ -84,14 +83,14 @@
 			</section>
 
 			<section>
+				<h2>Gallerie d'images</h2>
 				<div class="imgGallery">
-					<!-- grid d'images-->
-					<img class="imgGallery__item" src="" alt="">
-					<img class="imgGallery__item" src="" alt="">
-					<img class="imgGallery__item" src="" alt="">
-					<img class="imgGallery__item" src="" alt="">
-					<img class="imgGallery__item" src="" alt="">
-					<img class="imgGallery__item" src="" alt="">
+					<img class="imgGallery__item imgGallery__item--alignEnd" src="imgs/kiss.jpg" alt="Trinity enmbrasse Neo">
+					<img class="imgGallery__item imgGallery__item--alignEnd" src="imgs/gunfight.jpg" alt="Combat entre Neo et l'agent Smith">
+					<img class="imgGallery__item imgGallery__item--big1" src="imgs/neohand.jpg" alt="Neo arrête les balles en pointant sa main">
+					<img class="imgGallery__item imgGallery__item--big2" src="imgs/morpheus.jpg" alt="Morpheus assit sur un fauteuil">
+					<img class="imgGallery__item imgGallery__item--alignStart" src="imgs/kungfu.jpg" alt="Neo et Morpheus font du Kung Fu">
+					<img class="imgGallery__item imgGallery__item--alignStart" src="imgs/symbolshallway.jpg" alt="Neo voit la matrice pour la première fois">
 				</div>
 			</section>
 
@@ -110,90 +109,91 @@
 				<button>view more</button>
 			</section>
 
-			<section>
-				<h2>des cards</h2>
-				<span>text</span>
-				<div>
-					<img src="#" />
-					<h3>leslie alexander</h3>
-					<h4>co-foudner</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-						corrupti natus sit dolor dignissimos eos sed!</p>
-					<img src="#" />
-					<img src="#" />
-					<img src="#" />
-				</div>
-				<div>
-					<img src="#" />
-					<h3>leslie alexander</h3>
-					<h4>co-foudner</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-						corrupti natus sit dolor dignissimos eos sed!</p>
-					<img src="#" />
-					<img src="#" />
-					<img src="#" />
-				</div>
-				<div>
-					<img src="#" />
-					<h3>leslie alexander</h3>
-					<h4>co-foudner</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-						corrupti natus sit dolor dignissimos eos sed!</p>
-					<img src="#" />
-					<img src="#" />
-					<img src="#" />
-				</div>
-				<div>
-					<img src="#" />
-					<h3>leslie alexander</h3>
-					<h4>co-foudner</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-						corrupti natus sit dolor dignissimos eos sed!</p>
-					<img src="#" />
-					<img src="#" />
-					<img src="#" />
-				</div>
-			</section>
-			<section>
-				<!-- maps-->
-				<form action="">
-					<h3>formulaire</h3>
-					<span>blablabl</span>
-					<input type="text">
-					<input type="text">
-					<input type="text">
-					<input type="textarea">
-					<input type="button" value="submit">
-				</form>
-			</section>
-		</main>
-
-		<footer>
-
-			<a>
-				<h2>logo</h2>
-			</a>
-			<nav>
-				<ul>
-					<li>About us</li>
-					<li>features</li>
-					<li>pricing</li>
-					<li>carrer</li>
-					<li>faqs</li>
-					<li>privacy policy</li>
-				</ul>
-			</nav>
-			<div><span>Fait par: Jonathan Thivierge</span></div>
+		</div>
+		<section>
+			<h2>des cards</h2>
+			<span>text</span>
 			<div>
-				<img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+				<img src="#" />
+				<h3>leslie alexander</h3>
+				<h4>co-foudner</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
+					corrupti natus sit dolor dignissimos eos sed!</p>
+				<img src="#" />
+				<img src="#" />
+				<img src="#" />
 			</div>
 			<div>
-				<img src="#" alt="Telephone">
-				<span>123-345-4567</span>
-				<img src="#" alt="Courriel">
-				<span>thivierge@gmail.com</span>
+				<img src="#" />
+				<h3>leslie alexander</h3>
+				<h4>co-foudner</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
+					corrupti natus sit dolor dignissimos eos sed!</p>
+				<img src="#" />
+				<img src="#" />
+				<img src="#" />
 			</div>
-		</footer>
+			<div>
+				<img src="#" />
+				<h3>leslie alexander</h3>
+				<h4>co-foudner</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
+					corrupti natus sit dolor dignissimos eos sed!</p>
+				<img src="#" />
+				<img src="#" />
+				<img src="#" />
+			</div>
+			<div>
+				<img src="#" />
+				<h3>leslie alexander</h3>
+				<h4>co-foudner</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
+					corrupti natus sit dolor dignissimos eos sed!</p>
+				<img src="#" />
+				<img src="#" />
+				<img src="#" />
+			</div>
+		</section>
+		<section>
+			<!-- maps-->
+			<form action="">
+				<h3>formulaire</h3>
+				<span>blablabl</span>
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<input type="textarea">
+				<input type="button" value="submit">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+
+		<a>
+			<h2>logo</h2>
+		</a>
+		<nav>
+			<ul>
+				<li>About us</li>
+				<li>features</li>
+				<li>pricing</li>
+				<li>carrer</li>
+				<li>faqs</li>
+				<li>privacy policy</li>
+			</ul>
+		</nav>
+		<div><span>Fait par: Jonathan Thivierge</span></div>
+		<div>
+			<img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+		</div>
+		<div>
+			<img src="#" alt="Telephone">
+			<span>123-345-4567</span>
+			<img src="#" alt="Courriel">
+			<span>thivierge@gmail.com</span>
+		</div>
+	</footer>
 
 	</div>
 </body>

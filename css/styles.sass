@@ -1,6 +1,6 @@
 $black: rgb(0, 0, 0,)
 $darkGreen: #003B00
-$midGreen: #008F11
+$midGreen: #00a413
 $flashGreen: #3bff6c
 $lightGreen: #cdffd9
 $white: #ffffff
@@ -11,7 +11,7 @@ $black: #000000
     src: url(matrix.ttf) format('truetype')
 
 * 
-    box-sizing: border-box
+    box-sizing: border-bfox
     font-family: 'Courier New', Courier, monospace
 
 .container
@@ -27,19 +27,20 @@ $black: #000000
     background-attachment: fixed
     background-size: contain
 
-.blackBG
-    background-color: $black
-    color: $white
-
 .glowingBG
     box-shadow: 0 0 1.5rem $flashGreen
 
-header
+.blackBG
+    background-color: $black
+    color: $white
+    background-image: url('../imgs/rustbg.jpg')
+    background-position: center top
+
+.centeredContent
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
-    //background-color: blue 
 
 .logo
     margin: 3rem 0 0 0
@@ -95,7 +96,7 @@ header
         flex-direction: column
     &__label
         margin: 0 0 0.5rem 0
-        color: $white
+        color: $lightGreen
 
 .imgGallery
     display: grid
@@ -106,13 +107,118 @@ header
     &__item
         border: solid 0.1rem $darkGreen
         width: 100%
+        box-shadow: 0 0 0.8rem $darkGreen
         &--big1
             grid-column: 1 / 3
             grid-row: 2 / 3
         &--big2
             grid-column: 1 / 3
             grid-row: 3 / 4
-        &--alignEnd
-            align-self: end
-        &--alignStart
-            align-self: start
+
+.takeAPill
+    background-image: url('../imgs/pills.webp')
+    background-size: 100% 100%
+    width: 100%
+    height: 675px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    border: solid 0.1rem $darkGreen
+    &__btn
+        border: 0.2rem solid $black
+        padding: 1rem
+        border-radius: 2rem
+        font-weight: bold
+        color: $lightGreen
+        &--red   
+            background-color: rgb(176, 48, 39)
+        &--blue 
+            background-color: rgb(36, 65, 161)
+        &:hover
+            @extend .glowingBG
+
+.centeredTitle
+    text-align: center
+    color: $flashGreen
+    font-size: 3rem
+    letter-spacing: 0.1rem
+    font-family: matrixFont
+
+.spacer
+    padding-top:6rem
+
+.filmsContainer
+    display: flex
+    align-items: baseline
+    flex-grow: 1 2 1
+    gap: 2rem
+    &__film
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        h3
+            color: $flashGreen
+            font-size: 1.5rem
+    img
+        border: solid 0.1rem $darkGreen
+    p
+        text-align: center
+        color: $lightGreen
+
+hr
+    margin: 0
+    padding: 0
+    border: 0.1rem solid $darkGreen
+
+.critique
+    display: flex
+    justify-content: space-evenly
+    color: $lightGreen
+    &__card
+        display: flex
+        flex-direction: column
+        align-items: center
+        a
+            padding: 1rem
+            border-radius: 2rem
+            text-decoration: none
+            font-weight: bold
+            margin-top: 1.5rem
+
+    h4
+        font-size: 1.2rem
+        margin-bottom: 0.5rem
+    span
+        font-size: 3rem
+        font-weight: bold
+        color: $flashGreen
+
+.rottenTomatoesLink
+    background-color: rgb(249,49,9)
+    color: $black
+    &:hover
+        background-color: $black
+        color: rgb(249,49,9)
+        outline: 0.2rem solid $darkGreen
+        
+
+.imdbLink
+    background-color: rgb(246,199,0)
+    color: $black
+    &:hover
+        background-color: $black
+        color: rgb(246,199,0)
+        outline: 0.2rem solid $darkGreen
+
+.imdbLogo
+    width: 200px
+
+.rottenTomatoesLogo
+    width: 300px
+
+.actorCard
+    display: flex
+    flex-direction: column
+    &__img
+    &__socialIcon

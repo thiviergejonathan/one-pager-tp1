@@ -3,7 +3,7 @@
   src: url(matrix.ttf) format("truetype");
 }
 * {
-  box-sizing: border-box;
+  box-sizing: border-bfox;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -21,16 +21,18 @@
   background-size: contain;
 }
 
-.blackBG {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.glowingBG {
+.glowingBG, .takeAPill__btn:hover {
   box-shadow: 0 0 1.5rem #3bff6c;
 }
 
-header {
+.blackBG {
+  background-color: #000000;
+  color: #ffffff;
+  background-image: url("../imgs/rustbg.jpg");
+  background-position: center top;
+}
+
+.centeredContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,7 +73,7 @@ header {
 }
 .mainMenu__item a:active {
   color: #003B00;
-  text-shadow: 0 0 1rem #008F11;
+  text-shadow: 0 0 1rem #00a413;
 }
 
 .mainImg {
@@ -100,7 +102,7 @@ header {
 }
 .newsletter__label {
   margin: 0 0 0.5rem 0;
-  color: #ffffff;
+  color: #cdffd9;
 }
 
 .imgGallery {
@@ -113,6 +115,7 @@ header {
 .imgGallery__item {
   border: solid 0.1rem #003B00;
   width: 100%;
+  box-shadow: 0 0 0.8rem #003B00;
 }
 .imgGallery__item--big1 {
   grid-column: 1/3;
@@ -122,9 +125,128 @@ header {
   grid-column: 1/3;
   grid-row: 3/4;
 }
-.imgGallery__item--alignEnd {
-  align-self: end;
+
+.takeAPill {
+  background-image: url("../imgs/pills.webp");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 675px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 0.1rem #003B00;
 }
-.imgGallery__item--alignStart {
-  align-self: start;
+.takeAPill__btn {
+  border: 0.2rem solid #000000;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: #cdffd9;
+}
+.takeAPill__btn--red {
+  background-color: rgb(176, 48, 39);
+}
+.takeAPill__btn--blue {
+  background-color: rgb(36, 65, 161);
+}
+.centeredTitle {
+  text-align: center;
+  color: #3bff6c;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-family: matrixFont;
+}
+
+.spacer {
+  padding-top: 6rem;
+}
+
+.filmsContainer {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1 2 1;
+  gap: 2rem;
+}
+.filmsContainer__film {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.filmsContainer__film h3 {
+  color: #3bff6c;
+  font-size: 1.5rem;
+}
+.filmsContainer img {
+  border: solid 0.1rem #003B00;
+}
+.filmsContainer p {
+  text-align: center;
+  color: #cdffd9;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0.1rem solid #003B00;
+}
+
+.critique {
+  display: flex;
+  justify-content: space-evenly;
+  color: #cdffd9;
+}
+.critique__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.critique__card a {
+  padding: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.critique h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.critique span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3bff6c;
+}
+
+.rottenTomatoesLink {
+  background-color: rgb(249, 49, 9);
+  color: #000000;
+}
+.rottenTomatoesLink:hover {
+  background-color: #000000;
+  color: rgb(249, 49, 9);
+  outline: 0.2rem solid #003B00;
+}
+
+.imdbLink {
+  background-color: rgb(246, 199, 0);
+  color: #000000;
+}
+.imdbLink:hover {
+  background-color: #000000;
+  color: rgb(246, 199, 0);
+  outline: 0.2rem solid #003B00;
+}
+
+.imdbLogo {
+  width: 200px;
+}
+
+.rottenTomatoesLogo {
+  width: 300px;
+}
+
+.actorCard {
+  display: flex;
+  flex-direction: column;
 }

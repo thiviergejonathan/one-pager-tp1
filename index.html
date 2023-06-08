@@ -7,26 +7,27 @@
 	<title>Entrez dans la matrice</title>
 	<link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/styles.css" />
+	<script src="js/scripts.js" defer></script>
 </head>
 
 <body>
 	<div class="matrixConsoleBG">
 		<div class="container">
-			<header>
+			<header id="accueil" class="centeredContent">
 				<a href="index.html" class="logo">
 					<h1>
-						<img class="logo__img" src="./imgs/the-matrix.png" alt="The Matrix Logo">
+						<img id="accueil" class="logo__img" src="./imgs/the-matrix.png" alt="The Matrix Logo">
 					</h1>
 				</a>
 				<nav>
 					<ul class="mainMenu">
-						<li class="mainMenu__item"><a href="#">Infolettre</a></li>
-						<li class="mainMenu__item"><a href="#">Pilules</a></li>
-						<li class="mainMenu__item"><a href="#">Films</a></li>
-						<li class="mainMenu__item"><a href="#">Images</a></li>
-						<li class="mainMenu__item"><a href="#">Critiques</a></li>
-						<li class="mainMenu__item"><a href="#">Vedettes</a></li>
-						<li class="mainMenu__item"><a href="#">Commentaires</a></li>
+						<li class="mainMenu__item"><a href="#infolettre">Infolettre</a></li>
+						<li class="mainMenu__item"><a href="#pilules">Pilules</a></li>
+						<li class="mainMenu__item"><a href="#films">Films</a></li>
+						<li class="mainMenu__item"><a href="#images">Images</a></li>
+						<li class="mainMenu__item"><a href="#critiques">Critiques</a></li>
+						<li class="mainMenu__item"><a href="#acteurs">Acteurs</a></li>
+						<li class="mainMenu__item"><a href="#commentaires">Commentaires</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -34,7 +35,8 @@
 				<img src="imgs/neoflying.webp" alt="Neo vole" class="mainImg glowingBG">
 			</section>
 		</div>
-		<section class="newsletter glowingBG">
+
+		<section id="infolettre" class="newsletter glowingBG">
 			<div class="newsletter__container">
 				<h2 class="newsletter__label">Abonnez-vous à notre infolettre</h2>
 				<form action="#" class="newsletter__form">
@@ -43,119 +45,187 @@
 				</form>
 			</div>
 		</section>
+
+		<div class="spacer">
+		</div>
+
+		<div class="spacer">
+		</div>
 	</div>
+	<hr>
 
 	<main>
 		<div class="blackBG">
-			<section>
-				<span>des barbos</span>
-				<form action="#">
-					<input type="button" value="Button">
-				</form>
-			</section>
-			<section>
-				<h2>gros texte important</h2>
-				<span>text lorem ipsum</span>
-				<div>
-					<!-- flexbox -->
-					<div class="">
-						<img src="#" />
-						<h3>Truc x</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus nobis, earum in
-							esse
-							corporis quis tenetur omnis praesentium! Non!</p>
-					</div>
-					<div class="">
-						<img src="#" />
-						<h3>Truc x</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus nobis, earum in
-							esse
-							corporis quis tenetur omnis praesentium! Non!</p>
-					</div>
-					<div class="">
-						<img src="#" />
-						<h3>Truc x</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloribus nobis, earum in
-							esse
-							corporis quis tenetur omnis praesentium! Non!</p>
-					</div>
-				</div>
-			</section>
 
-			<section>
-				<h2>Gallerie d'images</h2>
-				<div class="imgGallery">
-					<img class="imgGallery__item imgGallery__item--alignEnd" src="imgs/kiss.jpg" alt="Trinity enmbrasse Neo">
-					<img class="imgGallery__item imgGallery__item--alignEnd" src="imgs/gunfight.jpg" alt="Combat entre Neo et l'agent Smith">
-					<img class="imgGallery__item imgGallery__item--big1" src="imgs/neohand.jpg" alt="Neo arrête les balles en pointant sa main">
-					<img class="imgGallery__item imgGallery__item--big2" src="imgs/morpheus.jpg" alt="Morpheus assit sur un fauteuil">
-					<img class="imgGallery__item imgGallery__item--alignStart" src="imgs/kungfu.jpg" alt="Neo et Morpheus font du Kung Fu">
-					<img class="imgGallery__item imgGallery__item--alignStart" src="imgs/symbolshallway.jpg" alt="Neo voit la matrice pour la première fois">
-				</div>
-			</section>
+			<div class="spacer">
+			</div>
 
-			<section>
-				<img src="" />
-				<h2>des stats</h2>
-				<span>text</span>
-				<div>
-					<span>44m</span>
-					<span>sold for</span>
+			<div class="container">
+				<section id="pilules">
+					<h2 class="centeredTitle">Quelle pilule allez-vous prendre?</h2>
+					<div class="takeAPill">
+						<button class="takeAPill__btn takeAPill__btn--red">Pilule rouge</button>
+						<button class="takeAPill__btn takeAPill__btn--blue">Pilule bleu</button>
+					</div>
+				</section>
+				<div class="spacer">
 				</div>
-				<div>
-					<span>324b</span>
-					<span>daily content uploaded</span>
-				</div>
-				<button>view more</button>
-			</section>
+			</div>
 
+			<div class="matrixConsoleBG">
+				<hr>
+				<div class="spacer">
+				</div>
+				<div class="spacer">
+				</div>
+				<hr>
+			</div>
+
+			<div class="container">
+				<section id="films">
+					<div class="spacer">
+					</div>
+					<h2 class="centeredTitle">Les films</h2>
+					<div class="filmsContainer">
+						<div class="filmsContainer__film">
+							<img src="imgs/filmposter1.jpg" />
+							<h3>La matrice</h3>
+							<p>Thomas A. Anderson, un jeune informaticien connu dans le monde du hacking sous le
+								pseudonyme de Neo, est contacté via son ordinateur par ce qu’il pense être un groupe de
+								hackers. Ils lui font découvrir que le monde dans lequel il vit n’est qu’un monde
+								virtuel appelé la Matrice, à l'intérieur duquel les êtres humains sont gardés
+								inconsciemment sous contrôle.</p>
+						</div>
+						<div class="filmsContainer__film">
+							<img src="imgs/filmposter2.jpg" />
+							<h3>La matrice: Rechargée</h3>
+							<p>6 mois après les événements du premier épisode, Neo est à présent en couple avec Trinity
+								et contrôle de mieux en mieux ses pouvoirs. Dans le monde réel, Sion est sur le point
+								d'être attaquée par 250 000 sentinelles robotiques, programmées pour anéantir les
+								derniers humains. Morpheus tente de galvaniser les habitants de Sion en leur rappelant
+								la parole de l'Oracle : l'Élu est capable d'arrêter la guerre contre les machines.</p>
+						</div>
+						<div class="filmsContainer__film">
+							<img src="imgs/filmposter3.jpg" />
+							<h3>La matrice: Révolutions</h3>
+							<p>C'est une guerre sans issue qui attend les derniers survivants humains retranchés de
+								Sion, cité-État de la résistance, assiégée par l'armée des Machines. Pour seul espoir ne
+								reste que Néo qui après s'être sorti d'un monde intermédiaire, parvient à se rendre
+								auprès du représentant du camp adverse et lui propose sous contrat d'une paix
+								définitive, d'anéantir ainsi leur ennemi commun : l'agent Smith devenu incontrôlable.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<div class="spacer">
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="matrixConsoleBG">
+
+				<div class="spacer">
+				</div>
+
+				<section id="images">
+					<h2 class="centeredTitle">Gallerie d'images</h2>
+					<div class="imgGallery">
+						<img class="imgGallery__item" src="imgs/kiss.jpg" alt="Trinity enmbrasse Neo">
+						<img class="imgGallery__item" src="imgs/gunfight.jpg" alt="Combat entre Neo et l'agent Smith">
+						<img class="imgGallery__item imgGallery__item--big1" src="imgs/neohand.jpg"
+							alt="Neo arrête les balles en pointant sa main">
+						<img class="imgGallery__item imgGallery__item--big2" src="imgs/symbolshallway.jpg"
+							alt="Neo voit la matrice pour la première fois">
+						<img class="imgGallery__item" src="imgs/kungfu.jpg" alt="Neo et Morpheus font du Kung Fu">
+						<img class="imgGallery__item" src="imgs/morpheus.jpg" alt="Morpheus assit sur un fauteuil">
+					</div>
+				</section>
+
+				<div class="spacer">
+				</div>
+				<hr>
+			</div>
+
+			<div class="container">
+				<section id="critiques">
+					<div class="spacer">
+					</div>
+					<h2 class="centeredTitle">Critiques</h2>
+					<div class="critique">
+						<div class="critique__card">
+							<img class="imdbLogo" src="imgs/IMDB_Logo_2016.svg"
+								alt="La note des utilisateurs du site web IMDB" />
+							<h4>Note des utilisateurs IMDB</h4>
+							<span>8.7/10</span>
+							<a class="imdbLink" href="https://www.imdb.com/title/tt0133093/?ref_=ttmi_tt">Visitez
+								imdb.com</a>
+						</div>
+
+						<div class="critique__card">
+							<img class="rottenTomatoesLogo" src="imgs/rottentomatoes_logo_40.336d6fe66ff.png"
+								alt="Les notes du site web Rotten Tomatoes" />
+
+							<h4>Note des critiques « Tomato Meter »</h4>
+							<span>88%</span>
+
+							<h4>Note des utilisateurs Rotten Tomatoes</h4>
+							<span>85%</span>
+
+							<a class="rottenTomatoesLink" href="https://www.rottentomatoes.com/m/matrix">Visitez
+								rottentomatoes.com</a>
+						</div>
+					</div>
+				</section>
+
+				<div class="spacer">
+				</div>
+				<hr>
+			</div>
 		</div>
-		<section>
-			<h2>des cards</h2>
-			<span>text</span>
+		<section id="acteurs">
+			<h2 class="centeredTitle">Acteurs</h2>
+			<div class="actorCard">
+				<img class="actorCard__img" src="#" />
+				<h3>Keanu Reeves</h3>
+				<h4>Neo</h4>
+				<p>Keanu Charles Reeves, whose first name means "cool breeze over the mountains" in Hawaiian, was born September 2, 1964 in Beirut, Lebanon. He is the son of Patricia Taylor, a showgirl and costume designer, and Samuel Nowlin Reeves, a geologist. </p>
+				<img class="actorCard__socialIcon" src="#" />
+				<img class="actorCard__socialIcon" src="#" />
+				<img class="actorCard__socialIcon" src="#" />
+			</div>
 			<div>
 				<img src="#" />
-				<h3>leslie alexander</h3>
-				<h4>co-foudner</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-					corrupti natus sit dolor dignissimos eos sed!</p>
+				<h3>Carrie-Anne Moss</h3>
+				<h4>Trinity</h4>
+				<p>Carrie-Anne Moss was born and raised in Vancouver, Canada. At age 20, after studying at the American Academy of Dramatic Arts, she moved to Europe to pursue a career in modeling. While in Spain she was cast in the TV show Dark Justice which was produced in Barcelona for its first season and Los Angeles for its second.</p>
 				<img src="#" />
 				<img src="#" />
 				<img src="#" />
 			</div>
 			<div>
 				<img src="#" />
-				<h3>leslie alexander</h3>
-				<h4>co-foudner</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-					corrupti natus sit dolor dignissimos eos sed!</p>
+				<h3>Laurence Fishburne</h3>
+				<h4>Morpheus</h4>
+				<p>Critically hailed for his forceful, militant, authoritative figures and one of Hollywood's most talented and versatile performers, Laurence (John) Fishburne III has been the recipient of numerous awards, including a number of NAACP Image honors.</p>
 				<img src="#" />
 				<img src="#" />
 				<img src="#" />
 			</div>
 			<div>
 				<img src="#" />
-				<h3>leslie alexander</h3>
-				<h4>co-foudner</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-					corrupti natus sit dolor dignissimos eos sed!</p>
-				<img src="#" />
-				<img src="#" />
-				<img src="#" />
-			</div>
-			<div>
-				<img src="#" />
-				<h3>leslie alexander</h3>
-				<h4>co-foudner</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, provident. Inventore facilis quam
-					corrupti natus sit dolor dignissimos eos sed!</p>
+				<h3>Hugo Weaving</h3>
+				<h4>Agent Smith</h4>
+				<p>Hugo Wallace Weaving was born on April 4, 1960 in Nigeria, to English parents Anne (Lennard), a tour guide and teacher, and Wallace Weaving, a seismologist. Hugo has an older brother, Simon, and a younger sister, Anna, who both also live and work in Australia.</p>
 				<img src="#" />
 				<img src="#" />
 				<img src="#" />
 			</div>
 		</section>
-		<section>
-			<!-- maps-->
+		<section id="commentaires">
+			<!-- maps -- Warner Bros. Studio Tour Hollywood -- 3400 W Warner Dr, Burbank, CA 91505, EE. UU. -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3301.7764497950816!2d-118.3386582!3d34.152061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf09218463db%3A0x48fb7ec9a5d6c988!2sWarner%20Bros.%20Studio%20Tour%20Hollywood!5e0!3m2!1sen!2sca!4v1686184647246!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			<form action="">
 				<h3>formulaire</h3>
 				<span>blablabl</span>
@@ -169,20 +239,24 @@
 	</main>
 
 	<footer>
-
-		<a>
-			<h2>logo</h2>
-		</a>
-		<nav>
-			<ul>
-				<li>About us</li>
-				<li>features</li>
-				<li>pricing</li>
-				<li>carrer</li>
-				<li>faqs</li>
-				<li>privacy policy</li>
+		<div class="centeredContent">
+			<a href="index.html" class="logo">
+				<h2>
+					<img id="accueil" class="logo__img" src="./imgs/the-matrix.png" alt="The Matrix Logo">
+				</h2>
+			</a>
+			<nav>
+				<ul class="mainMenu">
+					<li class="mainMenu__item"><a href="#infolettre">Infolettre</a></li>
+					<li class="mainMenu__item"><a href="#pilules">Pilules</a></li>
+					<li class="mainMenu__item"><a href="#films">Films</a></li>
+					<li class="mainMenu__item"><a href="#images">Images</a></li>
+					<li class="mainMenu__item"><a href="#critiques">Critiques</a></li>
+					<li class="mainMenu__item"><a href="#acteurs">Acteurs</a></li>
+					<li class="mainMenu__item"><a href="#commentaires">Commentaires</a></li>
 			</ul>
-		</nav>
+			</nav>
+		</div>
 		<div><span>Fait par: Jonathan Thivierge</span></div>
 		<div>
 			<img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">

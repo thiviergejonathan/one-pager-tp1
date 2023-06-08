@@ -38,9 +38,9 @@
 
 		<section id="infolettre" class="newsletter glowingBG">
 			<div class="newsletter__container">
-				<h2 class="newsletter__label">Abonnez-vous à notre infolettre</h2>
 				<form action="#" class="newsletter__form">
-					<input type="email" value="Votre courriel" class="">
+					<label class="newsletter__label" for="newsletter">Abonnez-vous à notre infolettre</label>
+					<input type="email" name="newsletter" class="" placeholder="manderson@gmail.com">
 					<input type="button" value="S'abonner">
 				</form>
 			</div>
@@ -359,20 +359,22 @@
 					<span>Fait par Jonathan Thivierge</span>
 				</div>
 				<div>
-					<img src="imgs/facebook-icon.png" alt="Lien vers facebook.com">
-					<img src="imgs/linkedin-icon.png" alt="Lien vers linkedin.com">
-					<img src="imgs/instagram-icon.png" alt="Lien vers instagram.com">
-					<img src="imgs/twitter-icon.png" alt="Lien vers twitter.com">
+					<a href="#">
+					<img src="imgs/facebook-icon.png" alt="Lien vers facebook.com"></a>
+					<a href="#">
+					<img src="imgs/linkedin-icon.png" alt="Lien vers linkedin.com"></a>
+					<a href="#">
+					<img src="imgs/instagram-icon.png" alt="Lien vers instagram.com"></a>
+					<a href="#">
+					<img src="imgs/twitter-icon.png" alt="Lien vers twitter.com"></a>
 				</div>
-				<div>
-					<div>
-						<img src="imgs/tel-icon.png" alt="Telephone">
-						<span>123-345-4567</span>
-					</div>
-					<div>
-						<img src="imgs/mail-icon.png" alt="Courriel">
-						<span>thivierge@gmail.com</span>
-					</div>
+				<div class="bottomFooterInfo__telEmail">
+					<a href="#">
+					<img src="imgs/tel-icon.png" alt="Telephone">
+					<span>123-345-4567</span></a>
+					<a href="#">
+					<img src="imgs/mail-icon.png" alt="Courriel">
+					<span>thivierge@gmail.com</span></a>
 				</div>
 			</div>
 		</footer>

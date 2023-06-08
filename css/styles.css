@@ -7,6 +7,14 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -18,7 +26,7 @@
   background-image: url("../imgs/matrixconsole-mediumwide.webp");
   background-repeat: repeat-x;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
 .glowingBG, .takeAPill__btn:hover {
@@ -58,6 +66,8 @@
   margin: 2rem 0 3rem 0;
   padding: 0;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .mainMenu__item a {
   font-size: 1.4rem;
@@ -86,7 +96,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 800px;
+  height: 40vw;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -100,9 +110,19 @@
   align-items: center;
   flex-direction: column;
 }
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+}
 .newsletter__label {
   margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #cdffd9;
+  text-align: center;
+}
+.newsletter input {
+  margin: 0 0 0.3rem 0;
 }
 
 .imgGallery {
@@ -130,7 +150,7 @@
   background-image: url("../imgs/pills.webp");
   background-size: 100% 100%;
   width: 100%;
-  height: 675px;
+  height: 40vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -296,4 +316,51 @@ hr {
 .comments form input, .comments form textarea {
   font-size: 1.3rem;
   margin: 0 0 1.5rem 0;
+}
+
+.bottomFooterInfo {
+  color: #cdffd9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.bottomFooterInfo img {
+  width: 30px;
+  height: 30px;
+}
+.bottomFooterInfo__telEmail {
+  display: flex;
+  align-items: center;
+}
+.bottomFooterInfo__telEmail a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #cdffd9;
+}
+.bottomFooterInfo__telEmail a:hover {
+  color: #3bff6c;
+}
+.bottomFooterInfo__telEmail span {
+  margin: 0 1rem 0 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .centeredTitle {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .centeredTitle {
+    font-size: 2rem;
+  }
+  .spacer {
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .centeredTitle {
+    font-size: 1.5rem;
+  }
 }

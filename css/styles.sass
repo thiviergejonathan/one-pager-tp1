@@ -16,6 +16,12 @@ $tinyGreenBorder: solid 0.1rem $darkGreen
     box-sizing: border-bfox
     font-family: 'Courier New', Courier, monospace
 
+html, body
+    width: 100%
+    height: 100%
+    margin: 0px
+    padding: 0px
+    overflow-x: hidden
 .container
     width: 90%
     max-width: 1200px
@@ -27,7 +33,7 @@ $tinyGreenBorder: solid 0.1rem $darkGreen
     background-image: url('../imgs/matrixconsole-mediumwide.webp')
     background-repeat: repeat-x
     background-attachment: fixed
-    background-size: contain
+    background-size: cover
 
 .glowingBG
     box-shadow: 0 0 1.5rem $flashGreen
@@ -60,6 +66,8 @@ $tinyGreenBorder: solid 0.1rem $darkGreen
     margin: 2rem 0 3rem 0
     padding: 0
     gap: 2rem
+    flex-wrap: wrap
+    justify-content: center
     &__item
         a
             font-size: 1.4rem
@@ -84,7 +92,7 @@ $tinyGreenBorder: solid 0.1rem $darkGreen
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
-    min-height: 800px
+    height: 40vw
     color: $black
     display: flex
     flex-direction: column
@@ -96,9 +104,19 @@ $tinyGreenBorder: solid 0.1rem $darkGreen
         display: flex
         align-items: center
         flex-direction: column
+    &__form
+        display: flex
+        flex-direction: column
     &__label
         margin: 0 0 0.5rem 0
+        font-size: 1.2rem
+        font-weight: bold
         color: $lightGreen
+        text-align: center
+    input
+        margin:0 0 0.3rem 0
+            
+
 
 .imgGallery
     display: grid
@@ -121,7 +139,7 @@ $tinyGreenBorder: solid 0.1rem $darkGreen
     background-image: url('../imgs/pills.webp')
     background-size: 100% 100%
     width: 100%
-    height: 675px
+    height: 40vw
     display: flex
     justify-content: space-around
     align-items: center
@@ -265,3 +283,42 @@ hr
         input, textarea
             font-size: 1.3rem
             margin:0 0 1.5rem 0
+
+.bottomFooterInfo
+    color:$lightGreen
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding-bottom: 2rem
+    img
+        width: 30px
+        height: 30px
+    &__telEmail
+        display: flex
+        align-items: center
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            color: $lightGreen
+            &:hover
+                color: $flashGreen
+        span
+            margin: 0 1rem 0 1rem
+
+@media screen and (max-width: 1200px)
+    .centeredTitle
+        font-size: 2.5rem
+
+@media screen and (max-width: 960px)
+    .centeredTitle
+        font-size: 2rem
+
+    .spacer
+        padding-top: 3rem
+
+
+
+@media screen and (max-width: 570px)
+    .centeredTitle
+        font-size: 1.5rem

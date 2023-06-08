@@ -23,21 +23,19 @@
         font-weight: bold
         color: $flashGreen
 
-.rottenTomatoesLink
-    background-color: rgb(249,49,9)
+@mixin movieLink($brandColor: #ddd)
+    background-color: $brandColor
     color: $black
     &:hover
         background-color: $black
-        color: rgb(249,49,9)
+        color: $brandColor
         outline: 0.2rem solid $darkGreen
+
+.rottenTomatoesLink
+    @include movieLink(rgb(249,49,9))
         
 .imdbLink
-    background-color: rgb(246,199,0)
-    color: $black
-    &:hover
-        background-color: $black
-        color: rgb(246,199,0)
-        outline: 0.2rem solid $darkGreen
+    @include movieLink(rgb(246,199,0))
 
 .imdbLogo
     width: 200px

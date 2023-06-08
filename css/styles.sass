@@ -1,12 +1,9 @@
-$black: rgb(0, 0, 0,)
 $darkGreen: #003B00
 $midGreen: #00a413
 $flashGreen: #3bff6c
 $lightGreen: #cdffd9
 $white: #ffffff
 $black: #000000
-
-$tinyGreenBorder: solid 0.1rem $darkGreen
 
 @font-face
     font-family: matrixFont
@@ -22,6 +19,7 @@ html, body
     margin: 0px
     padding: 0px
     overflow-x: hidden
+
 .container
     width: 90%
     max-width: 1200px
@@ -37,6 +35,10 @@ html, body
 .glowingBG
     box-shadow: 0 0 1.5rem $flashGreen
 
+.glowingBorders
+    border: solid 0.1rem $darkGreen
+    box-shadow: 0 0 0.8rem $darkGreen
+
 .blackBG
     background-color: $black
     color: $white
@@ -48,6 +50,13 @@ html, body
     border-top: solid 0.1rem $darkGreen
     box-shadow: 0 0 0.8rem $darkGreen
 
+.centeredTitle
+    text-align: center
+    color: $flashGreen
+    font-size: 3rem
+    letter-spacing: 0.1rem
+    font-family: matrixFont
+    
 .centeredContent
     display: flex
     flex-direction: column
@@ -90,12 +99,6 @@ html, body
 .mainImg
     width: 100%
 
-.centeredTitle
-    text-align: center
-    color: $flashGreen
-    font-size: 3rem
-    letter-spacing: 0.1rem
-    font-family: matrixFont
 
 @import "_newsletter"
 

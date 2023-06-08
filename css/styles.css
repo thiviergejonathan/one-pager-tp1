@@ -38,6 +38,11 @@ html, body {
   color: #ffffff;
   background-image: url("../imgs/rustbg.jpg");
   background-position: center top;
+  padding: 3rem 0 6rem 0;
+  margin: 0 0 8rem 0;
+  border-bottom: solid 0.1rem #003B00;
+  border-top: solid 0.1rem #003B00;
+  box-shadow: 0 0 0.8rem #003B00;
 }
 
 .centeredContent {
@@ -91,7 +96,7 @@ html, body {
 }
 
 .newsletter {
-  margin: 20rem 0 0 0;
+  margin: 12rem 0 12rem 0;
   background-image: url("../imgs/getoverhere.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,6 +136,7 @@ html, body {
   grid-template-rows: auto 1fr 1fr auto;
   gap: 5rem;
   padding: 0 5rem 0 5rem;
+  margin-bottom: 8rem;
 }
 .imgGallery__item {
   border: solid 0.1rem #003B00;
@@ -192,6 +198,7 @@ html, body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  max-width: 500px;
 }
 .filmsContainer__film h3 {
   color: #3bff6c;
@@ -215,6 +222,8 @@ hr {
   display: flex;
   justify-content: space-evenly;
   color: #cdffd9;
+  gap: 3rem;
+  text-align: center;
 }
 .critique__card {
   display: flex;
@@ -267,20 +276,24 @@ hr {
 }
 
 .actorCardContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 2rem;
   justify-content: center;
+  margin: 0 0 6rem 0;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .actorCard {
   display: flex;
+  flex-basis: 200px;
   flex-direction: column;
   padding: 2rem;
   border: solid 0.1rem #003B00;
   box-shadow: 0 0 0.8rem #003B00;
   align-items: center;
-  width: 40%;
+  margin: 0;
 }
 .actorCard h3 {
   font-size: 1.6rem;
@@ -307,6 +320,7 @@ hr {
   font-size: 1.3rem;
 }
 .comments form {
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -350,6 +364,10 @@ hr {
   .centeredTitle {
     font-size: 2.5rem;
   }
+  .filmsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 960px) {
   .centeredTitle {
@@ -358,9 +376,41 @@ hr {
   .spacer {
     padding-top: 3rem;
   }
+  .imgGallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .imgGallery__item--big1 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+  .imgGallery__item--big2 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+  .actorCardContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .comments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .comments form {
+    margin-left: 0;
+  }
+  .bottomFooterInfo {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 570px) {
-  .centeredTitle {
-    font-size: 1.5rem;
+  .critique {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .bottomFooterInfo {
+    font-size: 0.6rem;
   }
 }

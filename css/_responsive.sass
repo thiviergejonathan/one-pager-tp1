@@ -1,0 +1,48 @@
+@media screen and (max-width: 1200px)
+    .centeredTitle
+        font-size: 2.5rem
+
+    .filmsContainer
+        flex-direction: column
+        align-items: center
+
+@media screen and (max-width: 960px)
+    .centeredTitle
+        font-size: 2rem
+
+    .spacer
+        padding-top: 3rem
+
+    .imgGallery
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-column: auto
+        grid-row: auto
+        &__item
+            &--big1
+                grid-column: auto !important
+                grid-row: auto !important
+            &--big2
+                grid-column: auto !important
+                grid-row: auto !important
+
+    .actorCardContainer
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr
+
+    .comments
+        flex-direction: column
+        align-items: center
+        form
+            margin-left: 0
+
+    .bottomFooterInfo
+        font-size: 0.8rem
+
+@media screen and (max-width: 570px)
+    .critique
+        flex-direction: column
+        gap:5rem
+
+    .bottomFooterInfo
+        font-size: 0.6rem

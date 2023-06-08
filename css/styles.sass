@@ -27,7 +27,6 @@ html, body
     max-width: 1200px
     margin: 0 auto
     padding: 0
-    //background-color: red
 
 .matrixConsoleBG
     background-image: url('../imgs/matrixconsole-mediumwide.webp')
@@ -48,7 +47,6 @@ html, body
     border-bottom: solid 0.1rem $darkGreen
     border-top: solid 0.1rem $darkGreen
     box-shadow: 0 0 0.8rem $darkGreen
-
 
 .centeredContent
     display: flex
@@ -92,78 +90,6 @@ html, body
 .mainImg
     width: 100%
 
-.newsletter
-    margin: 12rem 0 12rem 0
-    background-image: url('../imgs/getoverhere.webp')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center center
-    height: 40vw
-    color: $black
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    &__container
-        background-color: rgba(0, 0, 0, 0.7)
-        padding: 1rem 5rem 1rem 5rem
-        display: flex
-        align-items: center
-        flex-direction: column
-    &__form
-        display: flex
-        flex-direction: column
-    &__label
-        margin: 0 0 0.5rem 0
-        font-size: 1.2rem
-        font-weight: bold
-        color: $lightGreen
-        text-align: center
-    input
-        margin:0 0 0.3rem 0
-            
-
-
-.imgGallery
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: auto 1fr 1fr auto
-    gap: 5rem
-    padding: 0 5rem 0 5rem
-    margin-bottom: 8rem
-    &__item
-        border: solid 0.1rem $darkGreen
-        box-shadow: 0 0 0.8rem $darkGreen
-        width: 100%
-        &--big1
-            grid-column: 1 / 3
-            grid-row: 2 / 3
-        &--big2
-            grid-column: 1 / 3
-            grid-row: 3 / 4
-
-.takeAPill
-    background-image: url('../imgs/pills.webp')
-    background-size: 100% 100%
-    width: 100%
-    height: 40vw
-    display: flex
-    justify-content: space-around
-    align-items: center
-    border: solid 0.1rem $darkGreen
-    &__btn
-        border: 0.2rem solid $black
-        padding: 1rem
-        border-radius: 2rem
-        font-weight: bold
-        color: $lightGreen
-        &--red   
-            background-color: rgb(176, 48, 39)
-        &--blue 
-            background-color: rgb(36, 65, 161)
-        &:hover
-            @extend .glowingBG
-
 .centeredTitle
     text-align: center
     color: $flashGreen
@@ -171,132 +97,19 @@ html, body
     letter-spacing: 0.1rem
     font-family: matrixFont
 
-.spacer
-    padding-top:6rem
+@import "_newsletter"
 
+@import "_takeAPill"
 
-.filmsContainer
-    display: flex
-    align-items: baseline
-    flex-grow: 1 2 1
-    gap: 2rem
-    &__film
-        display: flex
-        flex-direction: column
-        justify-content: flex-end
-        align-items: center
-        max-width: 500px
-        h3
-            color: $flashGreen
-            font-size: 1.5rem
-    img
-        border: $tinyGreenBorder
-    p
-        text-align: center
-        color: $lightGreen
+@import "_images"
 
-hr
-    margin: 0
-    padding: 0
-    border: 0.1rem solid $darkGreen
+@import "_films"
 
-.critique
-    display: flex
-    justify-content: space-evenly
-    color: $lightGreen
-    gap: 3rem
-    text-align: center
-    &__card
-        display: flex
-        flex-direction: column
-        align-items: center
-        a
-            padding: 1rem
-            border-radius: 2rem
-            text-decoration: none
-            font-weight: bold
-            margin-top: 1.5rem
+@import "_critiques"
 
-    h4
-        font-size: 1.2rem
-        margin-bottom: 0.5rem
-    span
-        font-size: 3rem
-        font-weight: bold
-        color: $flashGreen
+@import "_actors"
 
-.rottenTomatoesLink
-    background-color: rgb(249,49,9)
-    color: $black
-    &:hover
-        background-color: $black
-        color: rgb(249,49,9)
-        outline: 0.2rem solid $darkGreen
-        
-
-.imdbLink
-    background-color: rgb(246,199,0)
-    color: $black
-    &:hover
-        background-color: $black
-        color: rgb(246,199,0)
-        outline: 0.2rem solid $darkGreen
-
-.imdbLogo
-    width: 200px
-
-.rottenTomatoesLogo
-    width: 300px
-
-.actorCardContainer
-    display: grid
-    gap: 2rem
-    justify-content: center
-    margin:0 0 6rem 0
-    text-align: center
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr 1fr
-
-.actorCard
-    @extend .blackBG
-    display: flex
-    flex-basis: 200px
-    flex-direction: column
-    padding: 2rem
-    border: solid 0.1rem $darkGreen
-    box-shadow: 0 0 0.8rem $darkGreen
-    align-items: center
-    margin:0
-    h3
-        font-size: 1.6rem
-        color: $flashGreen
-        margin-bottom: 0
-    h4
-        font-size: 1.3rem
-        margin: 0.5rem 0 0 0
-        color: $lightGreen
-
-    &__img
-        border-radius: 10rem
-    &__socialIcon
-    &__socialContainer
-        a
-            text-decoration: none
-
-.comments
-    display: flex
-    justify-content: space-evenly
-    h4
-        font-size: 1.3rem
-    form
-        margin-left: 2rem
-        display: flex
-        flex-direction: column
-        label
-            font-size: 1.3rem
-        input, textarea
-            font-size: 1.3rem
-            margin:0 0 1.5rem 0
+@import "_comments"
 
 .bottomFooterInfo
     color:$lightGreen
@@ -320,51 +133,4 @@ hr
         span
             margin: 0 1rem 0 1rem
 
-@media screen and (max-width: 1200px)
-    .centeredTitle
-        font-size: 2.5rem
-
-    .filmsContainer
-        flex-direction: column
-        align-items: center
-
-@media screen and (max-width: 960px)
-    .centeredTitle
-        font-size: 2rem
-
-    .spacer
-        padding-top: 3rem
-
-    .imgGallery
-        grid-template-columns: 1fr
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
-        grid-column: auto
-        grid-row: auto
-        &__item
-            &--big1
-                grid-column: auto !important
-                grid-row: auto !important
-            &--big2
-                grid-column: auto !important
-                grid-row: auto !important
-
-    .actorCardContainer
-        grid-template-columns: 1fr
-        grid-template-rows: 1fr 1fr 1fr 1fr
-
-    .comments
-        flex-direction: column
-        align-items: center
-        form
-            margin-left: 0
-
-    .bottomFooterInfo
-        font-size: 0.8rem
-
-@media screen and (max-width: 570px)
-    .critique
-        flex-direction: column
-        gap:5rem
-
-    .bottomFooterInfo
-        font-size: 0.6rem
+@import "_responsive"

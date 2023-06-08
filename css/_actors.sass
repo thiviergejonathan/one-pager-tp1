@@ -1,0 +1,33 @@
+.actorCardContainer
+    display: grid
+    gap: 2rem
+    justify-content: center
+    margin:0 0 6rem 0
+    text-align: center
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+
+.actorCard
+    @extend .blackBG
+    display: flex
+    flex-basis: 200px
+    flex-direction: column
+    padding: 2rem
+    border: solid 0.1rem $darkGreen
+    box-shadow: 0 0 0.8rem $darkGreen
+    align-items: center
+    margin:0
+    h3
+        font-size: 1.6rem
+        color: $flashGreen
+        margin-bottom: 0
+    h4
+        font-size: 1.3rem
+        margin: 0.5rem 0 0 0
+        color: $lightGreen
+
+    &__img
+        border-radius: 10rem
+    &__socialContainer
+        a
+            text-decoration: none

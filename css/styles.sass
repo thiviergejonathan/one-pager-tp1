@@ -10,7 +10,7 @@ $black: #000000
     src: url(matrix.ttf) format('truetype')
 
 * 
-    box-sizing: border-bfox
+    box-sizing: border-box
     font-family: 'Courier New', Courier, monospace
 
 html, body
@@ -30,7 +30,7 @@ html, body
     background-image: url('../imgs/matrixconsole-mediumwide.webp')
     background-repeat: repeat-x
     background-attachment: fixed
-    background-size: cover
+    background-size: contain
 
 .glowingBG
     box-shadow: 0 0 1.5rem $flashGreen
@@ -49,6 +49,18 @@ html, body
     border-bottom: solid 0.1rem $darkGreen
     border-top: solid 0.1rem $darkGreen
     box-shadow: 0 0 0.8rem $darkGreen
+
+.screen-reader-text
+    border: 0
+    clip: rect(1px, 1px, 1px, 1px)
+    clip-path: inset(50%)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px
+    word-wrap: normal !important
 
 .centeredTitle
     text-align: center

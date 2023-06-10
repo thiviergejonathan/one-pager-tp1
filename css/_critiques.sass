@@ -1,3 +1,11 @@
+@mixin movieLink($brandColor: #ddd)
+    background-color: $brandColor
+    color: $black
+    &:hover
+        background-color: $black
+        color: $brandColor
+        outline: 0.2rem solid $darkGreen
+    
 .critique
     display: flex
     justify-content: space-evenly
@@ -14,7 +22,15 @@
             text-decoration: none
             font-weight: bold
             margin-top: 1.5rem
-
+    &__btn
+        &--imdb
+            @include movieLink(rgb(246,199,0))
+        &--rottenTomatoes
+            @include movieLink(rgb(249,49,9))
+    &__imdbLogo
+        width: 200px
+    &__rottenTomatoesLogo
+        width: 300px
     h4
         font-size: 1.2rem
         margin-bottom: 0.5rem
@@ -22,23 +38,3 @@
         font-size: 3rem
         font-weight: bold
         color: $flashGreen
-
-@mixin movieLink($brandColor: #ddd)
-    background-color: $brandColor
-    color: $black
-    &:hover
-        background-color: $black
-        color: $brandColor
-        outline: 0.2rem solid $darkGreen
-
-.rottenTomatoesLink
-    @include movieLink(rgb(249,49,9))
-        
-.imdbLink
-    @include movieLink(rgb(246,199,0))
-
-.imdbLogo
-    width: 200px
-
-.rottenTomatoesLogo
-    width: 300px

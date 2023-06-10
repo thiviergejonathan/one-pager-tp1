@@ -3,7 +3,7 @@
   src: url(matrix.ttf) format("truetype");
 }
 * {
-  box-sizing: border-bfox;
+  box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -26,14 +26,14 @@ html, body {
   background-image: url("../imgs/matrixconsole-mediumwide.webp");
   background-repeat: repeat-x;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
 }
 
 .glowingBG, .takeAPill__btn:hover {
   box-shadow: 0 0 1.5rem #3bff6c;
 }
 
-.glowingBorders, .map, .actorCard, .filmsContainer img, .takeAPill {
+.glowingBorders, .comments__map, .actorCard, .filmsContainer img, .takeAPill {
   border: solid 0.1rem #003B00;
   box-shadow: 0 0 0.8rem #003B00;
 }
@@ -48,6 +48,20 @@ html, body {
   border-bottom: solid 0.1rem #003B00;
   border-top: solid 0.1rem #003B00;
   box-shadow: 0 0 0.8rem #003B00;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
 }
 
 .centeredTitle {
@@ -195,7 +209,6 @@ html, body {
 .filmsContainer {
   display: flex;
   align-items: baseline;
-  flex-grow: 1 2 1;
   gap: 2rem;
 }
 .filmsContainer__film {
@@ -233,6 +246,30 @@ html, body {
   font-weight: bold;
   margin-top: 1.5rem;
 }
+.critique__btn--imdb {
+  background-color: rgb(246, 199, 0);
+  color: #000000;
+}
+.critique__btn--imdb:hover {
+  background-color: #000000;
+  color: rgb(246, 199, 0);
+  outline: 0.2rem solid #003B00;
+}
+.critique__btn--rottenTomatoes {
+  background-color: rgb(249, 49, 9);
+  color: #000000;
+}
+.critique__btn--rottenTomatoes:hover {
+  background-color: #000000;
+  color: rgb(249, 49, 9);
+  outline: 0.2rem solid #003B00;
+}
+.critique__imdbLogo {
+  width: 200px;
+}
+.critique__rottenTomatoesLogo {
+  width: 300px;
+}
 .critique h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -241,34 +278,6 @@ html, body {
   font-size: 3rem;
   font-weight: bold;
   color: #3bff6c;
-}
-
-.rottenTomatoesLink {
-  background-color: rgb(249, 49, 9);
-  color: #000000;
-}
-.rottenTomatoesLink:hover {
-  background-color: #000000;
-  color: rgb(249, 49, 9);
-  outline: 0.2rem solid #003B00;
-}
-
-.imdbLink {
-  background-color: rgb(246, 199, 0);
-  color: #000000;
-}
-.imdbLink:hover {
-  background-color: #000000;
-  color: rgb(246, 199, 0);
-  outline: 0.2rem solid #003B00;
-}
-
-.imdbLogo {
-  width: 200px;
-}
-
-.rottenTomatoesLogo {
-  width: 300px;
 }
 
 .actorCardContainer {
@@ -312,6 +321,7 @@ html, body {
 }
 .comments h4 {
   font-size: 1.3rem;
+  margin-top: 0;
 }
 .comments form {
   margin-left: 2rem;
@@ -323,7 +333,35 @@ html, body {
 }
 .comments form input, .comments form textarea {
   font-size: 1.3rem;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0 0;
+}
+.comments__map {
+  width: 500px;
+  height: 500px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.success input {
+  border-color: #3bff6c;
+}
+
+.error input {
+  border-color: #e73b3b;
+}
+
+.error textarea {
+  border-color: #e73b3b;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  height: 23px;
+  display: inline-block;
 }
 
 .bottomFooterInfo {
@@ -364,6 +402,9 @@ html, body {
   }
 }
 @media screen and (max-width: 960px) {
+  .matrixConsoleBG {
+    background-size: cover;
+  }
   .centeredTitle {
     font-size: 2rem;
   }
